@@ -27,3 +27,95 @@ let isLogined = true;
 isLogined = false;
 
 let cheak = 1<0;
+
+console.log(3+"3");
+
+let test = 1;
+test += 2; // test = test + 2;
+
+test = 1;
+console.log(test++);
+test = 1;
+console.log(++test); 
+
+console.log(3 == "3");
+console.log(3 === "3"); 
+
+console.log(test === 1 && true && "야호");
+console.log(test === 1 || false || "바보");
+
+console.log("dog" && "cat") // 단축평가
+
+test = 1;
+console.log(test > 1 ? "맞습니다" : "거짓입니다")
+
+if(1>3) {
+  //
+}else if(1>2) {
+  //
+}else if(1>1) {
+  //
+}else {
+  //
+}
+
+
+if ("월요일") {
+  if(true) {
+    console.log("오늘 하루도 얼마 남았다~~~~~~~!!")
+  }
+}else {
+  console.log("falsy한 친구들")
+}
+
+let flag = 1;
+switch(flag) {
+  case 1:
+    console.log("첫 번째 조건!");
+    break;
+  case 2:
+    console.log("두 번째 조건!")
+    break;
+  default:
+    console.log("기본값")
+}
+
+flag = 1;
+while(flag <5) {
+console.log(flag);
+flag++;
+}
+
+do {
+  console.log(flag);
+  flag++
+}while(flag < 5);
+
+for(let i = 0; i<10; i++) {
+  if(i%2==0) {
+    console.log(i);
+  }
+}
+
+for(let i = 0; i<10; i++) {
+  if(i%2!==0) {
+      continue;
+    }
+    console.log(i);
+}
+
+console.log(new Date());
+
+// window.location.href = "https://releases.jquery.com/";
+
+// const sample = new 생성함수();
+// sample = {};
+
+const date = new Date("2023/2/1"); 
+const date2 = new Date(2020,2,1);
+
+const lastDay = new Date(2023,11,31); // 2023-12-31
+let diff = lastDay.getTime() - date.getTime();
+// 1초 = 1000ms , 1분 = 60초 , 1시간 = 60분, 1일 = 24시간
+diff = Math.ceil(diff / (1000*60*60*24));
+document.write("<h3>연말까지 "+diff +"일</h3>")
