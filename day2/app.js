@@ -37,3 +37,18 @@ console.log(str1.toLowerCase());
 
 const str2 = "                 hello                     "
 console.log(str2.trim());
+
+// open("https://github.com/blueheart753/Jslecture/blob/main/README.html","naver","width = 800 ,height = 580px, scrollbars=no")
+
+// const userName = prompt("여러분의 이름은?","디지텍고등학교 학생");
+
+console.log(screen.width);
+console.log(screen.height);
+
+// alert(screen.width)
+
+console.log(location.href) // 현재 접속 중인 URL
+console.log(location.host) // 서버 주소
+// location.reload();
+
+// history.forward();
