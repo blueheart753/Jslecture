@@ -35,5 +35,5 @@ console.log(str1.toUpperCase());
 
 console.log(str1.toLowerCase());
 
-const str2 = "                            hello                     "
+const str2 = "                 hello                     "
 console.log(str2.trim());
