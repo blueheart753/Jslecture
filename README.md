@@ -436,4 +436,40 @@ console.log(str2.trim());
 
 ### 브라우저 객체 모델 ( DOM - DocumentObjectModel - )
 >- HTML 문서 구조
-### window , location , screen, history, navigator
+#### window
+- 가장 최상위 객체
+
+#### window.open()
+- URL 전달받은 페이지를 새 창에 표시
+```js
+window.open("www.naver.com","naver","width = 800px",",580px")
+```
+#### setInterval(함수,시간)
+- 계속해서 일정 시간 간격으로 함수를 호출
+
+#### setTimeout(함수, 시간)
+- 단 한번 일정 간이 흐른 후 함수를 호출
+
+#### location, screen, history, navigator, document
+
+##### screen
+- 사용자의 모니터 정보(pc,핸드폰,태블릿)
+```js
+console.log(screen.width);
+console.log(screen.height);
+```
+
+#### location
+- 브라우저와 관련된 현재 URL에 대한 정보, 새로고침 메서드를 제공
+
+#### history
+- 사용자가 방문한 사이트의 기록과 이전방문, 다음 방문 한 번씩 제어 가능
+
+```js
+history.forward(); // 다음 페이지 이동 (만약X , 이동안함)
+
+history.back(); // 이전 페이지 이동 (만약X , 이동안함)
+```
+
+#### navigator
+- 현재 사용자가 사용하는 브라우저 정보, 운영체제의 정보
