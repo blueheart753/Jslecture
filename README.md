@@ -780,3 +780,12 @@ const obj1 = { x: 2, y: 2 };
 const copyObj1 = { ...obj1 };
 const merged = { x: 1, y: 2, ...{ a: 3, b: 4 } };
 ```
+
+<br>
+# Jquery
+
+<br>
+
+### 라이브러리
+
+- 다양한 함수들의 집합채
