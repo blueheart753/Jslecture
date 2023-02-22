@@ -1045,3 +1045,25 @@ console.log($.isArray(areas));
 - targetArr에 subArr요소를 결합해주는 역할
 
 #### $("요소").index(찾고자 하는 데이터)
+
+### 속성 참색 선택자
+
+#### 선택한 요소를 기준으로 일치하는 속성 여부를 체크
+
+```js
+console.log($("li").index($("#target")));
+```
+
+> ex. img 태그 중 src 속성값이 "images/sample,jpg"인 것 체크
+
+#### $("요소:vidible")
+
+-
+
+#### $("요소:hidden")
+
+- 화면에 표시 하지 않은 상태의 요소를 가져옴
+
+#### is()
+
+- 선택한 요소의 상태가 지정한 속성과 일치하면 true / 아니면 false
