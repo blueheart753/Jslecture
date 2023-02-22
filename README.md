@@ -808,3 +808,62 @@ $("*").css("border", "1px solid #000");
 
 - 선택한 요소의 id/class 값이 일치하는 요소
 - "Tag.class" / "Tag#id" (띄어쓰기 하면 그 순간 하위 선택자)
+
+#### 인접 관계 선택자
+
+- 직접 선택자로 요소를 먼저 선택 후 해당 요소와 가까이에 있는 요소를 선택
+  > 부모(나를 감싸고 있는 가장 가까운 요소)
+
+```js
+$("li").parent().css("border", "1px solid #faf");
+```
+
+#### 하위요소
+
+```js
+$("#wrap h1").css("color", "blue");
+```
+
+#### 자식 요소
+
+- 선택한 요소를 기준으로 지정한 자식 요소만!
+
+```js
+$("#wrap>h1").css("color", "red");
+$("#inner_wrap").children().css("border", "1px solid #f0f");
+$("#wrap").children();
+```
+
+#### 형(이전) / 동생(다음)요소
+
+```js
+$("#target").prev().css("color", "red");
+$("#target").next().css("color", "grean");
+$("#target + li").css("color", "purple");
+```
+
+#### 전체 형(이전) / 전체 동생(다음)
+
+```js
+$("#target").prevAll().css("color", "red");
+$("#target").nextAll().css("color", "blue");
+```
+
+#### 범위 제한 전체 형 요소(이전) / 동생(다음)요소
+
+```js
+$("#target").prevUntil(".content1").css("color", "red");
+$("#target").nextUntil(".content4").css("color", "blue");
+```
+
+#### 모든 상위 요소
+
+```js
+$("#target").parents("#inner-wrap").css("border", "1px solid red");
+```
+
+#### 상위 요소 중 가장 가까운 요소만!
+
+```js
+$("#target").closest("ul").css("border", "1px solid red");
+```
