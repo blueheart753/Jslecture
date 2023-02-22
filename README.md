@@ -867,3 +867,65 @@ $("#target").parents("#inner-wrap").css("border", "1px solid red");
 ```js
 $("#target").closest("ul").css("border", "1px solid red");
 ```
+
+<br>
+<br>
+### 탐색 선택자
+#### 위치 탐색 선택자
+- 기본 선택자로 가져온 요소는 배열에 담겨 있다
+- 위치 탐색 선택자는 배열의 인덱스 값을 통해 접근!
+> first last 선택자
+```js
+$("#menu li:first").css("background", "#f70");
+$("#menu li:last").css("background", "#f7f");
+```
+
+#### even / odd 선택자
+
+```js
+$("#menu li:even").css("color", "red");
+$("#menu li:odd").css("color", "blue");
+```
+
+#### nth-child(숫자n) 선택자
+
+- 선택한 요소의 무리 중 지정된 숫자의 요소 선택
+
+```js
+$("#menu li:nth-child(2n)").css("color", "black");
+$("#menu li:nth-child(2n+1)").css("color", "blue");
+```
+
+#### nth-last-of-type(숫자) 선택자
+
+- 선택한 요소의 무리 중 지정된 요소 중에서도 마지막 위치!
+
+```js
+$("#menu li:nth-last-child(2)").css("color", "blue");
+```
+
+#### first-of-type / last of - type
+
+- 선택한 요소 중 첫번째 / 마지막 요소만
+
+```js
+$("#menu li:first-of-type").css("color", "salmon");
+$("#menu li:last-of-type").css("color", "skyblue");
+```
+
+#### only-child
+
+- 부모 요소에 단 하나뿐인 자식 요소일때만!
+
+```js
+$("li:only-child").css("border", "1px solid salmon");
+```
+
+#### slice(startIdx, endIdx)
+
+- 선택한 요소의 구간을 지정
+- startIdx는 포함 endIdx는 미포함
+
+```js
+$("#menu li").slice(1, 3).css("background", "salmon");
+```
